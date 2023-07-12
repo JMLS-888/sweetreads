@@ -1,0 +1,30 @@
+p {
+    margin: 10px 0 !important;
+}
+
+.login-container {
+    width: 400px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.space {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.tabs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.thumbnail {
+    width: 150px;
+    height: 150px;
+}
+
+.pages {
+    display: flex;
+    justify-content: center;
+}
