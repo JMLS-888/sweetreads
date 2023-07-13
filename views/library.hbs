@@ -1,0 +1,46 @@
+<h6>Stories</h6>
+
+<div class="row">
+    {{#each stories}}
+        <div class="col s12 m4">
+            <div class="card-image">
+                {{!-- todo: any additional icons --}}
+            </div>
+            <div class="card-content center-align">
+                <h5>{{title}}</h5>
+                <br>
+                <img class="thumbnail" src="{{image}}">
+                <div class="card-action center-align">
+                    <a href="/stories/{{_id}}" class="btn grey">Read Now</a>
+                </div>
+
+                <div>
+                    <form action="/stories/fav/{{_id}}" method="POST" class="col s12">
+                    <input type="hidden" name="_method" value="PUT">
+                        <button> 
+                                <i class="fa-solid fa-heart fa-heart fave"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    {{else}}
+        <p>No stories to display</p>
+    {{/each}}
+</div>
+
+<div class="pages">
+    <ul class="pagination">
+        <li class="disabled"><a href="#!"><i class="fas fa-chevron-left"></i></a></li>
+        <li class="active"><a href="#!">1</a></li>
+        <li class="waves-effect"><a href="#!">2</a></li>
+        <li class="waves-effect"><a href="#!">3</a></li>
+        <li class="waves-effect"><a href="#!">4</a></li>
+        <li class="waves-effect"><a href="#!">5</a></li>
+        <li class="waves-effect"><a href="#!"><i class="fas fa-chevron-right"></i></a></li>
+    </ul>
+</div>
+
+
+
+
