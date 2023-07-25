@@ -5,8 +5,6 @@
     "main": "index.js",
     "scripts": {
       "dev": "npm-run-all -p backend frontend",
-      "backend": "nodemon server.js --ignore './frontend-src/' --ignore './public'",
-      "frontend": "webpack --watch",
       "build": "webpack",
       "test": "echo \"Error: no test specified\" && exit 1"
     },
