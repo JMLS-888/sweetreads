@@ -30,6 +30,9 @@
       "regenerator-runtime": "^0.13.7",
       "webpack": "^5.2.0",
       "webpack-cli": "^4.1.0"
+    },
+    "engines": {
+      "node": "v20.1.0"
     }
   }
   
